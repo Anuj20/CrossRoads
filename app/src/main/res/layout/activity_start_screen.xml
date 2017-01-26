@@ -10,7 +10,7 @@
 
 
     <TextView
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="CROSSROADS"
         android:id="@+id/textView2"
@@ -20,16 +20,18 @@
         android:textColor="#000000"
         android:textStyle="bold"
         android:textSize="50dp"
-        android:gravity="center_horizontal"
-        android:typeface="sans" />
+        android:typeface="sans"
+        android:textAlignment="center" />
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="370dp"
+        android:layout_height="400dp"
         android:id="@+id/image"
         android:background="@drawable/splasshimage"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:contentDescription="Start_image" />
 
     <TextView
         android:layout_width="match_parent"
@@ -37,18 +39,18 @@
         android:text="YOU HAVE TO CHOOSE A WAY"
         android:id="@+id/textView"
         android:paddingRight="@dimen/activity_vertical_margin"
-        android:layout_below="@+id/image"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:textSize="45dp"
+        android:textSize="45sp"
         android:textColor="#000000"
         android:textStyle="bold|italic"
         android:theme="@style/Animation.AppCompat.DropDownUp"
         android:typeface="serif"
         android:layout_centerInParent="true"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:textAlignment="center" />
 
 
 </LinearLayout>

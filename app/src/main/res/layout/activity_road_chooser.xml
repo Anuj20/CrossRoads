@@ -10,7 +10,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="wrap_content"
         android:id="@+id/imageroad_easyroad"
         android:adjustViewBounds="false"
         android:onClick="easyroad"
@@ -18,7 +18,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:id="@+id/imageroad_lesstakenroad"
         android:layout_below="@+id/imageroad_easyroad"
         android:onClick="roadtrip"
